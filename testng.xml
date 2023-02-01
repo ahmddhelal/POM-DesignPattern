@@ -1,0 +1,17 @@
+<suite name="nopcommerce Regression suite">
+    <parameter name="browser" value="chrome"/>
+    <test name="Regression test">
+        <classes>
+            <class name="tests.UserRegisterTest"/>
+        </classes>
+    </test>
+</suite>
+<!--TO CREATE A XML REPORT AND XML FILE FOR FAILED TESTS
+    1-select the project
+    2-click on run
+    3-click on edit configurations
+    4-select the xml file from left column
+    5-select listeners from right column
+    6-click on plus icon
+    7-search for "reporter"
+    8- add first two options-->

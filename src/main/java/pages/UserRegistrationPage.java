@@ -37,6 +37,9 @@ public class UserRegistrationPage extends PageBase{
     @FindBy(xpath = "/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")
     public WebElement logoutBtn;
 
+    @FindBy(css = "a.ico-account")
+    WebElement myAccountBtn;
+
     public void userRegister(String firstName, String lastName, String email, String password) {
         setValueToTxtField(firstNameTxtBox, firstName);
         setValueToTxtField(lastNameTxtBox, lastName);
@@ -48,6 +51,10 @@ public class UserRegistrationPage extends PageBase{
 
     public void userLogout() {
         clickOnButton(logoutBtn);
+    }
+
+    public void openMyAccountPage() {
+        clickOnButton(myAccountBtn);
     }
 
 }

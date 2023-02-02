@@ -14,8 +14,11 @@ public class HomePage extends PageBase{
     @FindBy(linkText = "Register")
     WebElement registerBtn ;
 
-    @FindBy(xpath = "/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")
+    @FindBy(className = "ico-login")
     WebElement loginBtn;
+
+    @FindBy(className = "ico-account")
+    WebElement myAccountBtn;
 
     public void openRegisterPage() {
         clickOnButton(registerBtn);
@@ -23,6 +26,10 @@ public class HomePage extends PageBase{
 
     public void openLoginPage() {
         clickOnButton(loginBtn);
+    }
+
+    public void openMyAccountPage() {
+        clickOnButton(myAccountBtn);
     }
 
 
